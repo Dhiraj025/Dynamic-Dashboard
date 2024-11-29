@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="#" class="logo"></a> 
+          <button class="toggle-btn" id="toggleMenu">
+            ☰
+          </button>
+        </div>
+        <ul class="navbar-links" id="navbarLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  <!-- Header Section -->
+  <header>
+    <h1>Dynamic Dashboard</h1>
+    <p id="lastUpdated">Data last updated on: </p>
+  </header>
+
+  <main>
+    <!-- Donut Chart Section -->
+    <section id="chartSection">
+      <canvas id="donutChart"></canvas>
+    </section>
+
+    <!-- Dynamic Flex Grid Section -->
+    <section id="gridSection" class="grid-container">
+     
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Dashboard Inc.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
